@@ -1,4 +1,4 @@
-def and_operation(num1,num2):
+def or_operation(num1,num2):
     deci1 = int(num1,16)
     deci2 = int(num2,16)
     print(bin(deci1)[2:])
@@ -6,4 +6,4 @@ def and_operation(num1,num2):
     print(bin(deci1 | deci2)[2:])
 
 
-and_operation("33","3D")
+or_operation("33","3D")
