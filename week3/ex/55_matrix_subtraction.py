@@ -1,24 +1,9 @@
 import numpy as np
-
-def matrix_addition (matrix1, matrix2):
-    res = [[0,0,0,0],
-          [0,0,0,0],
-          [0,0,0,0],
-          [0,0,0,0]]
-    print(matrix1)
-    print(matrix2)
-
-    for i in range(len(matrix1)):
-        for j in range(len(matrix2)):
-            res = matrix1[i][j] - matrix2[i][j]
-            print(res)
-
-
-matrix_addition([[10, 5, 4, 2,],
-                 [5, 10, 9, 55],
-                 [9, 19, 69, 8],
-                 [7, 8, 4, 75]],
-                [[12, 65, 34, 2],
-                 [1, 5, 8, 45],
-                 [7, 21, 63, 8],
-                 [0, 78, 4, 65]])
+def matrix_addition(num1, num2):
+    res = np.subtract(num1, num2)
+    return (str(res)).replace('[','').replace(']','')
+mat1 = np.array([[10, 5, 4, 2],[5, 10, 9, 55,], [9, 19, 69, 8,], [7, 8, 4, 75]])
+mat2 = np.array([[12, 65, 34, 2,], [1, 5, 8, 45,], [7, 21, 63, 8,], [0, 78, 4, 65]])
+print('Martix 1:', '\n', str(mat1).replace('[','').replace(']',''))
+print('Martix 2:', '\n',str(mat2).replace('[','').replace(']',''))
+print('The result matrix is:', '\n' , matrix_addition(mat1, mat2))
