@@ -6,4 +6,4 @@ def message_conerter(mes):
 
 
 
-message_conerter("Hello")
+message_conerter("i hate this and i wanna die")
