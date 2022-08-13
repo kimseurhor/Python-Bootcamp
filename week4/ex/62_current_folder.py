@@ -7,9 +7,11 @@ def current_folder():
         if os.path.isfile(obj[x]):
             v.append((obj[x], "file"))
             # k =  (f'({x.name}), file')
-        else:
+        elif os.path.isdir:
             v.append((obj[x], "folder"))
             # k = (f'({x.name}), folder')
+        else:
+            return v
     print(v)
 
 
