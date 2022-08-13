@@ -15,4 +15,4 @@ def json_to_tsv(fjson,tsv):
             return print(0)
 
 
-json_to_tsv("apple.json", "tsv1.tsv")
+json_to_tsv("meow.json", "tsvmeow.tsv")

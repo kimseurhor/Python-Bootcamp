@@ -10,7 +10,6 @@ def tvs_to_json(tvs, fjosn):
         a = file.readline()
 
 
-
         titles = [t.strip() for t in a.split('\t')]
         for line in file:
             d = {}
@@ -28,4 +27,4 @@ def tvs_to_json(tvs, fjosn):
         return print(0)
 
 
-tvs_to_json("tsv1.tsv", "apple.json")
+tvs_to_json("tsv1.tsv", "tsv1.json")
