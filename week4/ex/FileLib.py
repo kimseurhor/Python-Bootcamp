@@ -6,10 +6,10 @@ class FileLib:
         for x in range(len(obj)):
             if os.path.isfile(obj[x]):
                 v.append((obj[x], "file"))
-                # k =  (f'({x.name}), file')
+
             elif os.path.isdir:
                 v.append((obj[x], "folder"))
-                # k = (f'({x.name}), folder')
+
             else:
                 return
         print(v)
@@ -45,25 +45,6 @@ class FileLib:
     def create_folder(self, folder_list):
         os.mkdir(folder_list)
         print("Folder created")
-        # if os.path.exists(folder_list):
-        #     import shutil
-        #     while True:
-        #         k = input(f"“Are you sure you want to {folder_list} replace ? [Y/N]”")
-        #         if k.upper() == 'Y':
-        #             shutil.rmtree(folder_list)
-        #
-        #             print(1)
-        #             return os.mkdir(folder_list)
-        #         elif k.upper() == 'N':
-        #             print(0)
-        #             return
-        #         else:
-        #             print('“Invalid Option”')
-        #
-        # else:
-        #
-        #     print(1)
-        #     return os.mkdir(folder_li
 
 FileLib().inspect()
 FileLib().current_path()
